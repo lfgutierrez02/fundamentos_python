@@ -51,4 +51,4 @@ print(math.e)
 print(math.sqrt(16))
 
 import random
-print(random.random()) # jenera numeros aleatorios
+print(random.random()) # genera numeros aleatorios del 0 a 1
