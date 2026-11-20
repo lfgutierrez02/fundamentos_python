@@ -1,11 +1,23 @@
-nota1 = float(input("ingrese nota 1: "))
-nota2 = float(input("ingrese nota 2: "))
-nota3 = float(input("ingrese nota 3: "))
+# Solicitar las tres calificaciones parciales
 
-prom = nota1 + nota2 + nota3
-prom/= 3
-print(round(prom))
+nota1 = float(input("Ingrese la primera calificación: "))
+nota2 = float(input("Ingrese la segunda calificación: "))
+nota3 = float(input("Ingrese la tercera calificación: "))
 
+# Calcular el promedio
+promedio = (nota1 + nota2 + nota3) / 3
 
-promedio >= 3.0
-print("el estudiante fue aprovado")
+promedio_redondeado = round(promedio, 2)
+
+# Calcular cuántos puntos faltan
+puntos_faltantes = 5.0 - promedio
+
+# el estudiante aprueba
+aprueba = promedio >= 3.0
+
+# Mostrar todos los resultados de forma legible
+
+print("\n Resultados ")
+print(f"Promedio de las tres notas: {promedio_redondeado}")
+print(f"Puntos faltantes para alcanzar 5.0: {round(puntos_faltantes, 2)}")
+print(f"¿El estudiante aprueba?: {aprueba}")
